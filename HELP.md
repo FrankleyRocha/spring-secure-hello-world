@@ -2,7 +2,7 @@
 
 ### in terminal run:
 ````bash
-docker run -p 9080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:22.0.1 start-dev
+docker run --name mykeycloak -p 9080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:22.0.1 start-dev
 ````
 ### in the browser, acess:
 - http://localhost:9080/admin
@@ -10,11 +10,13 @@ docker run -p 9080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin
 - password: admin
 
 - create a realm: myrealm
-- create a cliente: myclient
+- create a public client: myclient
 - create a user: myuser
 
-### for more info, fallow: https://www.keycloak.org/getting-started/getting-started-docker
-
+### for more info, fallow: 
+- [https://www.keycloak.org/getting-started/getting-started-docker](https://www.keycloak.org/getting-started/getting-started-docker)
+- [https://www.baeldung.com/spring-boot-keycloak](https://www.baeldung.com/spring-boot-keycloak)
+    
 # Springboot Getting Started
 
 ### Reference Documentation
